@@ -23,7 +23,8 @@ img {
 /* Homepage */
 
 .intro {
-    transform: translateY(22vh);
+    padding-top: 22vh;
+    padding-bottom: 25vh;
 }
 
 .intro > h1 {
