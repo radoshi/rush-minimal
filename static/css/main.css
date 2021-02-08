@@ -39,6 +39,11 @@ img {
     font-size: 3vmin;
 }
 
+.homepage-content {
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
 /* Page content */
 
 .content {
