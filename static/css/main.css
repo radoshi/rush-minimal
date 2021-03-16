@@ -9,6 +9,16 @@ body {
     flex-direction: column;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    background-color: var(--background-color);
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark-background-color);
+        color: var(--dark-color);
+    }
+
+
 }
 
 main {
@@ -42,6 +52,12 @@ img {
     font-size: 3vmin;
 }
 
+@media (prefers-color-scheme: dark) {
+    .intro > h1, .intro > h2 {
+        color: var(--dark-color);
+    }
+}
+
 .homepage-content {
     font-size: 1.2em;
     line-height: 2em;
@@ -73,12 +89,23 @@ a:link, a:visited {
     color: var(--accent);
 }
 
+
 a.icon:hover {
     text-decoration: none;
 }
 
 a:hover {
     color: var(--accent) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    a:link, a:visited {
+        color: var(--dark-accent);
+    }
+
+    a:hover {
+        color: var(--dark-accent) !important;
+    }    
 }
 
 /* Copyright message */
@@ -107,6 +134,12 @@ a:hover {
     background-color: var(--accent);
 }
 
+@media (prefers-color-scheme: dark) {
+    .item-tag {
+        background-color: var(--dark-accent);
+    }    
+}
+
 /* Navigation icons */
 
 .navbar-icon {
@@ -122,4 +155,24 @@ a:hover {
 
 footer {
     border-bottom: var(--border-width) solid var(--accent);
+}
+
+@media (prefers-color-scheme: dark) {
+    .navbar-default {
+        background-color: #05080F;
+        border-color: #0f182e;
+    }    
+
+    .navbar.navbar-default {
+        border-top: var(--border-width) solid var(--dark-accent);
+    }
+    
+    footer {
+        border-bottom: var(--border-width) solid var(--dark-accent);
+    }
+
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background-color: #05080F;
+        border-color: #0f182e;        
+    }
 }
