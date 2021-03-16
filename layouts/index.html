@@ -9,7 +9,7 @@
     </div>
 
     <div class="content">
-        <h3>Latest</h3>
+        <h2>Latest</h2>
         {{ $paginator := .Paginate (first 3 site.RegularPages) }}
         {{ range $paginator.Pages }} {{ partial "list-item" . }} {{ end }}
         <h3><a href="/posts">All Posts</a></h3>

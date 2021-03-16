@@ -29,27 +29,29 @@ main {
 }
 
 img {
-    max-width: 80%;
+    max-width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 2em;
 }
 
 /* Homepage */
 
 .intro {
-    padding-top: 22vh;
-    padding-bottom: 25vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 
 .intro > h1 {
     color: #212121;
-    font-size: 12vh;
+    font-size: 10vh;
+    padding-bottom: 10vh;
 }
 
-.intro > h2 {
+h1, h2 {
     color: #757575;
-    font-size: 3vmin;
+    font-size: 5vh;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -66,7 +68,7 @@ img {
 /* Page content */
 
 .content {
-    padding-top: 20px;
+    padding-top: 1.2em;
     font-size: 1.2em;
     line-height: 2em;
 }
